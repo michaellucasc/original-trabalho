@@ -1,0 +1,182 @@
+body {       /* corpo principal da pagina */
+    margin: auto;
+    background-color: #b6b4b4; 
+}
+
+/* Menu */
+.menu {     
+    background-color: #8f8f8f; 
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+}
+
+/* Botões */
+.botao {             
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(5px);
+    box-shadow: 0px 3px 0px #1a466d, 0px 4px 6px rgba(5, 83, 138, 0.2);
+    justify-content: center;
+    font-size: larger;
+    display: flex; 
+    padding: 10px 20px; 
+    color: rgb(203, 197, 197); 
+    background-color:black; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.botao:hover {
+    background-color:  #0f4682; 
+}
+
+/* Texto Central */
+section h1 {
+    margin-top: 100px; 
+    padding-left: 20px; 
+    text-align: center;
+}
+
+
+/* Logo Flutuante */
+h1 {        
+    padding: 50px; 
+    animation: float 3s ease-in-out infinite;
+    margin: 0;
+    font-size: 3em; 
+    color: black; 
+    font-weight: bold; 
+}
+
+@keyframes float {       
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+}
+
+h1 span {
+    color: #3097f2;
+}
+
+/* Parágrafo acima do Rodapé */
+section p.paragrafo {      
+    font-size: 100%;
+    text-align: justify; 
+    border: 2px solid #8f8f8f; 
+    padding: 10px; 
+    margin: 0; 
+    margin-top: 50px; 
+    background-color: #8f8f8f;
+    color: rgb(203, 197, 197);
+}
+
+/* Lista de Especificações de Serviço */
+.lista {        
+    font-size: 2em; 
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+    width: 100%; 
+    max-width: 500px; 
+    text-align: center;
+}
+
+.lista li {
+    background-color: #8f8f8f;
+    color: rgb(203, 197, 197);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #1a466d, 0px 4px 6px rgba(5, 83, 138, 0.2);
+}
+
+.lista li:hover {
+    background-color: #072442;
+}
+
+/* Rodapé */
+footer {        
+    background-color: #8f8f8f;
+    padding: 20px; 
+    margin-top: 50px; 
+    text-align: center; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 16px; 
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0 10px; 
+    display: inline-flex; 
+    align-items: center;
+}
+
+footer a:hover {
+    background-color: #0f4682; 
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu {
+        gap: 20px; 
+        flex-direction: column; 
+    }
+
+    section h1 {
+        padding-left: 10px; 
+        margin-top: 50px; 
+    }
+
+    h1 {
+        padding: 20px 10px; 
+        font-size: 3em; 
+    }
+    
+
+
+    .lista {
+        font-size: 1.5em; 
+        padding-top: 30px; 
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .botao {
+        padding: 8px 15px; 
+    }
+
+    section h1 {
+        padding-left: 5px; 
+        margin-top: 30px; 
+    }
+
+    h1 {
+        padding: 10px 5px; 
+        font-size: 2em; 
+    }
+
+    .lista {
+        font-size: 1.2em; 
+        padding-top: 20px; 
+        margin-left: 0;
+        margin-right: 0;
+
+  
+}
+}

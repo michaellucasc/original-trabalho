@@ -1,0 +1,174 @@
+body {       /* corpo principal da pagina */
+    margin: auto;
+    background-color: #b6b4b4; 
+}
+
+/* Menu */
+.menu {     
+    background-color: #8f8f8f; 
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+}
+
+/* Botões */
+.botao {             
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(5px);
+    box-shadow: 0px 3px 0px #1a466d, 0px 4px 6px rgba(5, 83, 138, 0.2);
+    justify-content: center;
+    font-size: larger;
+    display: flex; 
+    padding: 10px 20px; 
+    color: rgb(203, 197, 197); 
+    background-color:black; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+.botao:hover {
+    background-color:  #0f4682; 
+}
+
+.botaoEmail {        
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(5px);
+    box-shadow: 0px 3px 0px #1a466d, 0px 4px 6px rgba(5, 83, 138, 0.2);
+    justify-content: center;
+    font-size: larger;
+    display: flex; 
+    padding: 10px 20px; 
+    color: rgb(203, 197, 197); 
+    background-color:black; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+.botaoEmail:hover {
+    background-color:  #0f4682; 
+}
+
+
+/* Formulário */
+section.container {       
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-left: 5%; 
+    padding-right: 5%; 
+}
+
+.contact-form {
+    background-color: rgb(203, 197, 197);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 3px 0px #1a466d, 0px 4px 6px rgba(5, 83, 138, 0.2);
+}
+
+.contact-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(28, 27, 27);
+}
+
+span {
+    color: #3097f2;
+}
+
+.input-group {
+    margin-bottom: 5px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input,
+.input-group textarea,
+.botaoEmail {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Parágrafo acima do Rodapé */
+section p.paragrafo {      
+    font-size: 100%;
+    text-align: justify; 
+    border: 2px solid #8f8f8f; 
+    margin-top: 50px; 
+    background-color: #8f8f8f;
+    color: rgb(203, 197, 197);
+}
+
+
+/* Rodapé */
+footer {        
+    background-color: #8f8f8f;
+    padding: 20px; 
+    margin-top: 50px; 
+    text-align: center; 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 16px; 
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0 10px; 
+    display: inline-flex; 
+    align-items: center;
+}
+
+footer a:hover {
+    background-color: #0f4682; 
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu {
+        gap: 20px; 
+        flex-direction: column; 
+    }
+
+    
+
+@media (max-width: 480px) {
+    .botao {
+        padding: 8px 15px; 
+    }
+
+}
+}
